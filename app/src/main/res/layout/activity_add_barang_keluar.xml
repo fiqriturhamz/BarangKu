@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.barang_keluar.AddBarangKeluarActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_add_barang_keluar">
+
+        <Spinner
+            android:id="@+id/spinner_add_id_barang_keluar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/thirty"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/thirty"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_add_id_barang_keluar">
+
+        </Spinner>
+
+        <TextView
+            android:id="@+id/tv_add_id_barang_keluar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/thirty"
+            android:layout_marginTop="@dimen/one_hundred"
+            android:text="Nama Barang"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_add_deskripsi_barang_keluar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/thirty"
+            android:layout_marginTop="16dp"
+            android:text="Deskripsi"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_add_id_barang_keluar">
+
+        </TextView>
+
+        <EditText
+            android:background="@drawable/edittext_shape"
+            android:id="@+id/edt_add_deskripsi_barang_keluar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/thirty"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/thirty"
+            android:hint="Deskripsi barang keluar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_add_deskripsi_barang_keluar">
+
+        </EditText>
+
+        <TextView
+            android:id="@+id/tv_add_jumlah_barang_keluar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/thirty"
+            android:layout_marginTop="16dp"
+            android:text="Jumlah barang keluar"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_add_deskripsi_barang_keluar">
+
+        </TextView>
+
+        <EditText
+            android:background="@drawable/edittext_shape"
+            android:id="@+id/edt_add_jumlah_barang_keluar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/thirty"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="@dimen/thirty"
+            android:hint="Berapa jumlah barang keluar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_add_jumlah_barang_keluar">
+
+        </EditText>
+
+        <Button
+            android:id="@+id/btn_add_barang_keluar_to_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/thirty"
+            android:layout_marginTop="16dp"
+            android:text="Tambah barang keluar"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_add_jumlah_barang_keluar">
+
+        </Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loading_add_barang_keluar"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/layout_add_barang_keluar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ProgressBar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

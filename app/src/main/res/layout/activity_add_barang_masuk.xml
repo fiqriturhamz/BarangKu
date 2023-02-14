@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.barang_masuk.AddBarangMasukActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout_add_barang_masuk"
+        android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/tv_add_nama_barang_masuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginTop="50dp"
+        android:text="Nama Barang Masuk"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <EditText
+        android:background="@drawable/edittext_shape"
+        android:id="@+id/edt_add_nama_barang_masuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/thirty"
+        android:hint="Nama Barang Masuk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_nama_barang_masuk">
+
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/tv_add_jumlah_barang_masuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginTop="16dp"
+        android:text="Jumlah Barang Masuk"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_add_nama_barang_masuk">
+
+    </TextView>
+
+    <EditText
+        android:background="@drawable/edittext_shape"
+        android:id="@+id/edt_add_jumlah_barang_masuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/thirty"
+        android:hint="Jumlah Barang Masuk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_jumlah_barang_masuk">
+
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/tv_add_deskripsi_barang_masuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginTop="16dp"
+        android:text="Deskripsi Barang Masuk"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_add_jumlah_barang_masuk">
+
+    </TextView>
+
+    <EditText
+        android:background="@drawable/edittext_shape"
+        android:id="@+id/edt_add_deskripsi_barang_masuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/thirty"
+        android:hint="Deskripsi Barang Masuk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_deskripsi_barang_masuk">
+
+    </EditText>
+
+    <TextView
+        android:id="@+id/tv_add_jenis_barang_masuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginTop="16dp"
+        android:text="Jenis Barang Masuk"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_add_deskripsi_barang_masuk">
+
+    </TextView>
+
+    <Spinner
+        android:id="@+id/spinner_add_jenis_barang_masuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/thirty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_jenis_barang_masuk">
+
+    </Spinner>
+
+
+    <TextView
+        android:id="@+id/tv_add_id_supplier_barang_masuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginTop="16dp"
+        android:text="ID Supplier"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_add_jenis_barang_masuk">
+
+    </TextView>
+
+    <Spinner
+        android:id="@+id/spinner_add_supplier_barang_masuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/thirty"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="@dimen/thirty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_add_id_supplier_barang_masuk">
+
+    </Spinner>
+
+        <Button
+            android:id="@+id/btn_add_barang_masuk_to_server"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/thirty"
+            android:text="Tambah barang masuk"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_add_supplier_barang_masuk">
+
+        </Button>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <ProgressBar
+        android:id="@+id/loading_add_barang_masuk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ProgressBar>
+</androidx.constraintlayout.widget.ConstraintLayout>

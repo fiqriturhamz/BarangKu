@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.MainActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:id="@+id/layout_main"
+        android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="32dp"
+        android:text="Hello"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="User"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.0">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Supplier"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnImgSupplier"
+        app:layout_constraintStart_toStartOf="@+id/btnImgSupplier"
+        app:layout_constraintTop_toBottomOf="@+id/btnImgSupplier">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/btnImgSupplier"
+        android:layout_width="150dp"
+
+        android:layout_height="150dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/supplier"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/btn_jenis_barang"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/barang"
+
+        app:layout_constraintBottom_toBottomOf="@+id/btnImgSupplier"
+        app:layout_constraintStart_toEndOf="@+id/btnImgSupplier"
+        app:layout_constraintTop_toTopOf="@+id/btnImgSupplier">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Jenis Barang"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_jenis_barang"
+        app:layout_constraintStart_toStartOf="@+id/btn_jenis_barang"
+        app:layout_constraintTop_toBottomOf="@+id/btn_jenis_barang">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/btnLogout"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:tint="@color/black"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/ic_logout"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_barang_keluar"
+        app:layout_constraintStart_toEndOf="@+id/btn_barang_keluar"
+        app:layout_constraintTop_toTopOf="@+id/btn_barang_keluar">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Logout"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btnLogout"
+        app:layout_constraintStart_toStartOf="@+id/btnLogout"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogout">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/btn_barang_stok"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/stok"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+    </ImageView>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Barang dan Stok"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_barang_stok"
+        app:layout_constraintStart_toStartOf="@+id/btn_barang_stok"
+        app:layout_constraintTop_toBottomOf="@+id/btn_barang_stok">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/btn_barang_masuk"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/barang_masuk"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_barang_stok"
+        app:layout_constraintStart_toEndOf="@+id/btn_barang_stok"
+        app:layout_constraintTop_toTopOf="@+id/btn_barang_stok">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Barang masuk"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_barang_masuk"
+        app:layout_constraintStart_toStartOf="@+id/btn_barang_masuk"
+        app:layout_constraintTop_toBottomOf="@+id/btn_barang_masuk">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/btn_barang_keluar"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/barang_keluar"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Barang keluar"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_barang_keluar"
+        app:layout_constraintStart_toStartOf="@+id/btn_barang_keluar"
+        app:layout_constraintTop_toBottomOf="@+id/btn_barang_keluar">
+
+    </TextView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/loading_main"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ProgressBar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

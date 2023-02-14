@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginEnd="30dp"
+    android:layout_height="wrap_content">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_input_id_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_id_barang"
+            app:layout_constraintStart_toEndOf="@+id/tv_id_barang"
+            app:layout_constraintTop_toTopOf="@+id/tv_id_barang">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_id_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="ID Barang : "
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_jenis_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Jenis Barang : "
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_nama_barang">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_nama_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Nama Barang : "
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_id_barang">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_input_nama_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Injoker"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_nama_barang"
+            app:layout_constraintStart_toEndOf="@+id/tv_nama_barang"
+            app:layout_constraintTop_toTopOf="@+id/tv_nama_barang">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_input_jenis_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Adidas"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_jenis_barang"
+            app:layout_constraintStart_toEndOf="@+id/tv_jenis_barang"
+            app:layout_constraintTop_toTopOf="@+id/tv_jenis_barang">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_quantity_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Quantity : "
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_jenis_barang">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_input_quantity_barang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_quantity_barang"
+            app:layout_constraintStart_toEndOf="@+id/tv_quantity_barang"
+            app:layout_constraintTop_toTopOf="@+id/tv_quantity_barang">
+
+        </TextView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

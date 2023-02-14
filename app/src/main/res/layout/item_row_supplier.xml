@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="8dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginEnd="30dp"
+    android:layout_height="wrap_content">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:padding="10dp"
+
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_input_id_supplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_id_supplier"
+        app:layout_constraintStart_toEndOf="@+id/tv_id_supplier"
+        app:layout_constraintTop_toTopOf="@+id/tv_id_supplier">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_id_supplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ID Supplier : "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_company_supplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Perusahaan Supplier : "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama_supplier">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_nama_supplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Nama Supplier : "
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_id_supplier">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_input_nama_supplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Injoker"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_nama_supplier"
+        app:layout_constraintStart_toEndOf="@+id/tv_nama_supplier"
+        app:layout_constraintTop_toTopOf="@+id/tv_nama_supplier">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_input_perusahaan_supplier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Adidas"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_company_supplier"
+        app:layout_constraintStart_toEndOf="@+id/tv_company_supplier"
+        app:layout_constraintTop_toTopOf="@+id/tv_company_supplier">
+
+    </TextView>
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
